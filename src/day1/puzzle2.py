@@ -22,6 +22,7 @@ class Dial:
                 if self.point == 0:
                     self.counter += 1
 
+
 if __name__ == "__main__":
     dial = Dial()
     dial.rotate()
