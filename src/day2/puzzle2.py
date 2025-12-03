@@ -22,7 +22,6 @@ class Checker:
                             self.sum += product_id
 
 
-
 if __name__ == "__main__":
     checker = Checker()
     checker.check()
