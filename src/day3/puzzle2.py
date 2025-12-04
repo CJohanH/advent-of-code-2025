@@ -14,8 +14,8 @@ class BatteryBanks:
                 for i in range(len(bank)):
                     battery = bank[i]
 
-                    # If there is a joltage to compare to and there is enough space in the battery bank,
-                    # iterate over batteries until one with more voltage is found.
+                    # If there is a "joltage" and there is enough batteries left in the bank to fill the capacity, remove
+                    # the tail of the "joltage" until the tail is of equal or stronger "joltage" than the current battery.
                     while (
                             len(current_joltage)
                             and current_joltage[-1] < battery
